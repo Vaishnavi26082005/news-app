@@ -12,7 +12,7 @@ const Newboard = ({category}) => {
     <div>
         <h2 className="text-center ">Latest <span className=" badge bg-danger">News</span></h2>
         <p className="text-center">Get Daily Updates from Khabar Express!</p>
-        {articles.map((news,index)=>{
+        {articles?.map((news,index)=>{
           return <Newsitem key={index} title={news.title} description={news.description} src={news.urlToImage} url={news.url} />
         })}
     </div>
